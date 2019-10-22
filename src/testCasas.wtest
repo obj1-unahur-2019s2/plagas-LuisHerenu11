@@ -1,0 +1,33 @@
+import plagas.*
+import casas.*
+
+describe "prueba casas"{
+	var casita1 = new Hogar()
+	var huerta1 = new Huerta()
+	var mascota1 = new Mascota()
+	
+	fixture{
+		casita1.confort(200)
+		casita1.nivelDeMugre(50)
+	}
+	
+	test "prueba casita1"{
+			
+		assert.equals(200,casita1.confort())
+		assert.that(casita1.evilOrGood())
+	}
+	
+	test "prueba huerta1"{	
+		nivelHuerta.nivel(50)
+		huerta1.capacidad(100)
+		assert.equals(100,huerta1.capacidad())
+		assert.that(huerta1.evilOrGood())
+	}
+	test "prueba mascota1"{
+		
+		mascota1.salud(300)
+		assert.equals(300,mascota1.salud())
+		assert.that(mascota1.evilOrGood())
+	}
+}
+

@@ -1,0 +1,25 @@
+import plagas.*
+import casas.*
+
+describe "prueba plagas"{
+	var casita1 = new Hogar()
+	var huerta1 = new Huerta()
+	var mascota1 = new Mascota()
+	var cucarachin = new Cucarachas(peso = 10, poblacion = 5)
+	
+	fixture	{
+		cucarachin.poblacion(10)
+		casita1.nivelDeMugre(50)
+		casita1.confort(200)
+	}
+	test "casita1 + ataque"{
+		casita1.recibirAtaque(cucarachin)
+		assert.equals(55,casita1.nivelDeMugre())	
+	}
+	
+	
+	test "prueba 1"{
+		assert.equals(10,cucarachin.peso())
+		assert.equals(5,cucarachin.poblacion())
+	}
+}

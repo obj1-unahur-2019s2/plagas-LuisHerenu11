@@ -5,7 +5,7 @@ class Hogar {
 	var property confort = 0
 	
 	method evilOrGood(){
-		return confort / 2 <= nivelDeMugre
+		return confort / 2 >= nivelDeMugre
 	}
 	method recibirAtaque(unaPlaga){
 			nivelDeMugre += unaPlaga.nivelDeDanio()
