@@ -23,7 +23,7 @@ class Huerta {
 		if (unaPlaga.transmitenEnfermedades()){
 			capacidad -= 10
 		}
-		else{}	
+		else{}
 	}
 }
 object nivelHuerta {	
